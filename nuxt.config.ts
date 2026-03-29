@@ -48,17 +48,9 @@ export default defineNuxtConfig({
     },
   },
 
-  studio: {
-    // Studio admin route (default: '/_studio')
-    route: "/_studio",
-
-    // Git repository configuration (owner and repo are required)
-    repository: {
-      provider: "github", // 'github' or 'gitlab'
-      owner: "waw3ru", // your GitHub/GitLab username or organization
-      repo: "waw3ru", // your repository name
-      branch: "main", // the branch to commit to (default: main)
-    },
+  // Environment-specific overrides
+  $production: {
+    studio: false,
   },
 
   compatibilityDate: "2024-04-03",
