@@ -1,7 +1,7 @@
 <template>
   <div v-if="cv" class="pb-24">
     <!-- Hero Section -->
-    <HeroSection 
+    <HeroSection
       :name="cv.name"
       :title="cv.title"
       :summary="cv.summary"
@@ -26,35 +26,35 @@
 </template>
 
 <script setup lang="ts">
-import HeroSection from '~/components/home/HeroSection.vue'
-import ExperienceSection from '~/components/home/ExperienceSection.vue'
-import SkillsSection from '~/components/home/SkillsSection.vue'
-import EducationSection from '~/components/home/EducationSection.vue'
+import EducationSection from "~/components/home/EducationSection.vue";
+import ExperienceSection from "~/components/home/ExperienceSection.vue";
+import HeroSection from "~/components/home/HeroSection.vue";
+import SkillsSection from "~/components/home/SkillsSection.vue";
 
 interface CV {
-  name: string
-  title: string
-  avatar: string
-  tagline: string
-  email: string
-  location: string
-  github: string
-  twitter: string
-  linkedin: string
-  summary: string
-  skills: any[]
-  experience: any[]
-  education: any[]
+  name: string;
+  title: string;
+  avatar: string;
+  tagline: string;
+  email: string;
+  location: string;
+  github: string;
+  twitter: string;
+  linkedin: string;
+  summary: string;
+  skills: any[];
+  experience: any[];
+  education: any[];
 }
 
-const { data: cv } = await useAsyncData('cv-data', () => queryCollection('cv').first()) as { data: Ref<CV | null> }
+const { data: cv } = (await useAsyncData("cv-data", () => queryCollection("cv").first())) as { data: Ref<CV | null> };
 
 useSeoMeta({
   title: "Home",
   description: cv.value?.tagline || "",
   ogTitle: "John (.W.) Wambugu | Senior Software Engineer",
   ogDescription: cv.value?.tagline || "",
-})
+});
 
 useSchemaOrg([
   definePerson({
@@ -62,10 +62,10 @@ useSchemaOrg([
     image: cv.value?.avatar,
     jobTitle: cv.value?.title,
     description: cv.value?.summary,
-    url: "https://waw3ru.vercel.app",
+    url: "https://wawwru.nalima.digital",
     sameAs: [cv.value?.github, cv.value?.linkedin, cv.value?.twitter].filter(Boolean) as string[],
   }),
-])
+]);
 </script>
 
 <style lang="scss" scoped>

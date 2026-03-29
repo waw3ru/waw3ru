@@ -2,14 +2,9 @@
   <article v-if="post" class="pb-12 md:pb-24 animate-fade-up">
     <!-- Hero Header -->
     <div class="relative w-full h-[40vh] md:h-[60vh] bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-      <NuxtImg 
-        v-if="post.cover" 
-        :src="post.cover" 
-        :alt="post.title"
-        class="absolute inset-0 w-full h-full object-cover opacity-60"
-      />
+      <NuxtImg v-if="post.cover" :src="post.cover" :alt="post.title" class="absolute inset-0 w-full h-full object-cover opacity-60" />
       <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
-      
+
       <UContainer class="relative h-full flex flex-col justify-end pb-12 z-10">
         <div class="max-w-3xl">
           <div class="flex flex-wrap items-center gap-3 mb-6">
@@ -17,7 +12,13 @@
               {{ new Date(post.publishedAt).toLocaleDateString() }}
             </UBadge>
             <div class="hidden sm:flex flex-wrap gap-2">
-              <UBadge v-for="tag in post.tags" :key="tag" color="primary" variant="subtle" class="bg-primary-500/20 text-primary-200 backdrop-blur border-none font-medium">
+              <UBadge
+                v-for="tag in post.tags"
+                :key="tag"
+                color="primary"
+                variant="subtle"
+                class="bg-primary-500/20 text-primary-200 backdrop-blur border-none font-medium"
+              >
                 {{ tag }}
               </UBadge>
             </div>
@@ -39,7 +40,7 @@
         <main class="lg:col-span-3 prose prose-lg dark:prose-invert prose-img:rounded-xl prose-a:text-primary max-w-none">
           <ContentRenderer :value="post" />
         </main>
-        
+
         <!-- Sidebar -->
         <aside class="space-y-8">
           <UCard class="sticky top-24 pt-4 border-none shadow-none ring-1 hidden lg:block">
@@ -65,21 +66,21 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
 
 // Fetch main post based on slug (which is matching the path for Nuxt Content v3)
 // Wait, nuxt content next API has the path match the original path it was sourced from without extension
 const { data: post } = await useAsyncData(`post-${route.params.slug}`, () => {
-  return queryCollection('blog').path(`/blog/${route.params.slug}`).first()
-})
+  return queryCollection("blog").path(`/blog/${route.params.slug}`).first();
+});
 
 // Fetch related posts excluding current via stem (slug)
 const { data: relatedPosts } = await useAsyncData(`related-${route.params.slug}`, () => {
-  return queryCollection('blog')
-    .where('stem', '<>', route.params.slug as string)
+  return queryCollection("blog")
+    .where("stem", "<>", route.params.slug as string)
     .limit(3)
-    .all()
-})
+    .all();
+});
 
 useSeoMeta({
   title: post.value?.title || "Blog Post",
@@ -89,7 +90,7 @@ useSeoMeta({
   ogImage: post.value?.cover,
   articlePublishedTime: post.value?.publishedAt,
   author: "John (.W.) Wambugu",
-})
+});
 
 useSchemaOrg([
   defineArticle({
@@ -100,9 +101,9 @@ useSchemaOrg([
     author: [
       {
         name: "John (.W.) Wambugu",
-        url: "https://waw3ru.vercel.app",
+        url: "https://wawwru.nalima.digital",
       },
     ],
   }),
-])
+]);
 </script>

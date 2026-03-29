@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxt/icon", "@nuxt/fonts", "nuxt-vuefire", "nuxt-studio", "@nuxtjs/seo"],
 
   site: {
-    url: "https://waw3ru.vercel.app",
+    url: "https://wawwru.nalima.digital",
     name: "John (.W.) Wambugu",
     description: "Senior Software Engineer specializing in building scalable web applications and digital experiences.",
     defaultLocale: "en",
@@ -65,10 +65,6 @@ export default defineNuxtConfig({
   // Environment-specific overrides
   $production: {
     studio: false,
-  },
-
-  nitro: {
-    preset: "vercel",
   },
 
   compatibilityDate: "2024-04-03",
