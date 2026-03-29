@@ -27,6 +27,7 @@
     "@nuxt/icon": "^1.15.0",
     "@nuxt/image": "latest",
     "@nuxt/ui": "^2.15.2",
+    "@nuxtjs/vercel-builder": "^0.25.0",
     "nuxt-vuefire": "latest",
     "sass": "^1.98.0",
     "typescript": "latest"
