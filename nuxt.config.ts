@@ -56,15 +56,19 @@ export default defineNuxtConfig({
         {
           src: "https://app.rybbit.io/api/script.js",
           "data-site-id": "5e26bf8298ec",
-          defer: true
-        }
-      ]
+          defer: true,
+        },
+      ],
     },
   },
 
   // Environment-specific overrides
   $production: {
     studio: false,
+  },
+
+  nitro: {
+    preset: "vercel",
   },
 
   compatibilityDate: "2024-04-03",
