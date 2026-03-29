@@ -15,25 +15,25 @@
             </p>
             
             <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 mb-12">
-              <UButton :to="github" target="_blank" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:rotate-6">
+              <UButton :to="github" target="_blank" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:rotate-6" data-rybbit-event="contact_click" data-rybbit-prop-platform="github" data-rybbit-prop-location="hero">
                 <UIcon name="i-lucide-github" class="w-7 h-7" />
               </UButton>
-              <UButton :to="linkedin" target="_blank" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:-rotate-6">
+              <UButton :to="linkedin" target="_blank" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:-rotate-6" data-rybbit-event="contact_click" data-rybbit-prop-platform="linkedin" data-rybbit-prop-location="hero">
                 <UIcon name="i-lucide-linkedin" class="w-7 h-7" />
               </UButton>
-              <UButton :to="twitter" target="_blank" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:rotate-6">
+              <UButton :to="twitter" target="_blank" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:rotate-6" data-rybbit-event="contact_click" data-rybbit-prop-platform="twitter" data-rybbit-prop-location="hero">
                 <UIcon name="i-simple-icons-x" class="w-7 h-7" />
               </UButton>
-              <UButton :to="'mailto:' + email" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:rotate-6">
+              <UButton :to="'mailto:' + email" color="gray" variant="solid" size="xl" class="rounded-full w-14 h-14 flex items-center justify-center p-0 shadow-xl ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 hover:bg-primary-500 hover:text-white transition-all transform hover:-translate-y-2 hover:rotate-6" data-rybbit-event="contact_click" data-rybbit-prop-platform="email" data-rybbit-prop-location="hero">
                 <UIcon name="i-lucide-mail" class="w-7 h-7" />
               </UButton>
             </div>
 
             <div class="flex flex-wrap justify-center lg:justify-start gap-6">
-              <UButton to="/blog" size="xl" color="primary" class="font-bold uppercase tracking-widest rounded-full px-10 py-4 shadow-2xl hover:shadow-primary-500/20 transition-all transform hover:-translate-y-1">
+              <UButton to="/blog" size="xl" color="primary" class="font-bold uppercase tracking-widest rounded-full px-10 py-4 shadow-2xl hover:shadow-primary-500/20 transition-all transform hover:-translate-y-1" data-rybbit-event="cta_click" data-rybbit-prop-label="read_blog" data-rybbit-prop-destination="/blog">
                 Read my blog
               </UButton>
-              <UButton to="/links" size="xl" color="gray" variant="ghost" class="font-bold uppercase tracking-widest rounded-full px-10 py-4 border-2 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all transform hover:-translate-y-1">
+              <UButton to="/links" size="xl" color="gray" variant="ghost" class="font-bold uppercase tracking-widest rounded-full px-10 py-4 border-2 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all transform hover:-translate-y-1" data-rybbit-event="cta_click" data-rybbit-prop-label="useful_links" data-rybbit-prop-destination="/links">
                 Useful links
               </UButton>
             </div>

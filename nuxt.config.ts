@@ -4,7 +4,14 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxt/icon", "@nuxt/fonts", "nuxt-vuefire", "nuxt-studio"],
+  modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxt/icon", "@nuxt/fonts", "nuxt-vuefire", "nuxt-studio", "@nuxtjs/seo"],
+
+  site: {
+    url: "https://waw3ru.vercel.app",
+    name: "John (.W.) Wambugu",
+    description: "Senior Software Engineer specializing in building scalable web applications and digital experiences.",
+    defaultLocale: "en",
+  },
 
   content: {
     build: {

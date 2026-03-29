@@ -81,10 +81,28 @@ const { data: relatedPosts } = await useAsyncData(`related-${route.params.slug}`
     .all()
 })
 
-useHead({
-  title: post.value?.title || 'Blog Post',
-  meta: [
-    { name: 'description', content: post.value?.description || '' }
-  ]
+useSeoMeta({
+  title: post.value?.title || "Blog Post",
+  description: post.value?.description || "",
+  ogTitle: post.value?.title,
+  ogDescription: post.value?.description,
+  ogImage: post.value?.cover,
+  articlePublishedTime: post.value?.publishedAt,
+  author: "John (.W.) Wambugu",
 })
+
+useSchemaOrg([
+  defineArticle({
+    headline: post.value?.title,
+    description: post.value?.description,
+    image: post.value?.cover,
+    datePublished: post.value?.publishedAt,
+    author: [
+      {
+        name: "John (.W.) Wambugu",
+        url: "https://waw3ru.vercel.app",
+      },
+    ],
+  }),
+])
 </script>

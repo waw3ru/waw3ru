@@ -49,12 +49,23 @@ interface CV {
 
 const { data: cv } = await useAsyncData('cv-data', () => queryCollection('cv').first()) as { data: Ref<CV | null> }
 
-useHead({
-  title: cv.value ? `${cv.value.name} | ${cv.value.title}` : 'Loading...',
-  meta: [
-    { name: 'description', content: cv.value?.tagline || '' }
-  ]
+useSeoMeta({
+  title: "Home",
+  description: cv.value?.tagline || "",
+  ogTitle: "John (.W.) Wambugu | Senior Software Engineer",
+  ogDescription: cv.value?.tagline || "",
 })
+
+useSchemaOrg([
+  definePerson({
+    name: cv.value?.name,
+    image: cv.value?.avatar,
+    jobTitle: cv.value?.title,
+    description: cv.value?.summary,
+    url: "https://waw3ru.vercel.app",
+    sameAs: [cv.value?.github, cv.value?.linkedin, cv.value?.twitter].filter(Boolean) as string[],
+  }),
+])
 </script>
 
 <style lang="scss" scoped>

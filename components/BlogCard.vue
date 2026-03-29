@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="post.path" class="block group h-full relative">
+  <NuxtLink :to="post.path" class="block group h-full relative" data-rybbit-event="blog_post_click" :data-rybbit-prop-title="post.title" :data-rybbit-prop-slug="post.path" :data-rybbit-prop-category="post.tags?.[0] || 'Uncategorized'">
     <div class="futuristic-card glass-morphism rounded-3xl p-0 mb-8 flex flex-col group border border-gray-300/60 dark:border-white/[0.03] hover:border-primary-500/20 transition-all duration-500 break-inside-avoid shadow-sm hover:shadow-xl hover:shadow-primary-500/5 overflow-hidden">
       <!-- Cover Image -->
       <div class="relative overflow-hidden aspect-video w-full bg-gray-100 dark:bg-gray-800/50">

@@ -26,6 +26,10 @@
             :to="item.path"
             class="text-xs font-black uppercase tracking-[0.2em] hover:text-primary transition-all relative py-1 group"
             :exact-active-class="'text-primary'"
+            data-rybbit-event="nav_link_click"
+            :data-rybbit-prop-label="item.label"
+            :data-rybbit-prop-path="item.path"
+            data-rybbit-prop-source="desktop_header"
           >
             {{ item.label }}
             <span
@@ -75,6 +79,10 @@
             :to="item.path"
             class="text-4xl font-display font-extrabold hover:text-primary transition-all transform hover:translate-x-2"
             active-class="text-primary translate-x-2"
+            data-rybbit-event="nav_link_click"
+            :data-rybbit-prop-label="item.label"
+            :data-rybbit-prop-path="item.path"
+            data-rybbit-prop-source="mobile_menu"
             @click="isMenuOpen = false"
           >
             {{ item.label }}
@@ -91,6 +99,9 @@
               variant="soft"
               icon="i-lucide-github"
               class="rounded-full w-12 h-12 flex items-center justify-center p-0"
+              data-rybbit-event="contact_click"
+              data-rybbit-prop-platform="github"
+              data-rybbit-prop-location="mobile_menu"
             />
             <UButton
               :to="cv.linkedin"
@@ -99,6 +110,9 @@
               variant="soft"
               icon="i-lucide-linkedin"
               class="rounded-full w-12 h-12 flex items-center justify-center p-0"
+              data-rybbit-event="contact_click"
+              data-rybbit-prop-platform="linkedin"
+              data-rybbit-prop-location="mobile_menu"
             />
             <UButton
               :to="cv.twitter"
@@ -107,6 +121,9 @@
               variant="soft"
               icon="i-simple-icons-x"
               class="rounded-full w-12 h-12 flex items-center justify-center p-0"
+              data-rybbit-event="contact_click"
+              data-rybbit-prop-platform="twitter"
+              data-rybbit-prop-location="mobile_menu"
             />
             <UButton
               :to="'mailto:' + cv.email"
@@ -114,6 +131,9 @@
               variant="soft"
               icon="i-lucide-mail"
               class="rounded-full w-12 h-12 flex items-center justify-center p-0"
+              data-rybbit-event="contact_click"
+              data-rybbit-prop-platform="email"
+              data-rybbit-prop-location="mobile_menu"
             />
           </div>
         </div>
@@ -161,6 +181,9 @@
                 variant="solid"
                 size="lg"
                 class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                data-rybbit-event="contact_click"
+                data-rybbit-prop-platform="github"
+                data-rybbit-prop-location="reach_out"
               >
                 <UIcon name="i-lucide-github" class="w-8 h-8" />
               </UButton>
@@ -171,6 +194,9 @@
                 variant="solid"
                 size="lg"
                 class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:-rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                data-rybbit-event="contact_click"
+                data-rybbit-prop-platform="linkedin"
+                data-rybbit-prop-location="reach_out"
               >
                 <UIcon name="i-lucide-linkedin" class="w-8 h-8" />
               </UButton>
@@ -181,6 +207,9 @@
                 variant="solid"
                 size="lg"
                 class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                data-rybbit-event="contact_click"
+                data-rybbit-prop-platform="twitter"
+                data-rybbit-prop-location="reach_out"
               >
                 <UIcon name="i-simple-icons-x" class="w-8 h-8" />
               </UButton>
@@ -190,6 +219,9 @@
                 variant="solid"
                 size="lg"
                 class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                data-rybbit-event="contact_click"
+                data-rybbit-prop-platform="email"
+                data-rybbit-prop-location="reach_out"
               >
                 <UIcon name="i-lucide-mail" class="w-8 h-8" />
               </UButton>
@@ -260,6 +292,10 @@ const navItems = [
 ];
 
 const toggleColorMode = () => {
-  colorMode.preference = colorMode.preference === "dark" ? "light" : "dark";
+  const newMode = colorMode.preference === "dark" ? "light" : "dark";
+  colorMode.preference = newMode;
+  if ((window as any).rybbit) {
+    (window as any).rybbit.event("theme_changed", { to_mode: newMode });
+  }
 };
 </script>

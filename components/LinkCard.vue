@@ -45,6 +45,10 @@
         target="_blank"
         rel="noopener"
         class="flex items-center gap-2 text-sm font-bold text-primary-500 hover:text-primary-600 transition-colors group/link"
+        data-rybbit-event="external_link_click"
+        :data-rybbit-prop-title="link.title"
+        :data-rybbit-prop-url="link.url"
+        :data-rybbit-prop-platform="link.platform"
       >
         <span>Read More</span>
         <UIcon name="i-lucide-arrow-right" class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
