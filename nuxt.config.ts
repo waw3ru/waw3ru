@@ -45,6 +45,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      script: [
+        {
+          src: "https://app.rybbit.io/api/script.js",
+          "data-site-id": "5e26bf8298ec",
+          defer: true
+        }
+      ]
     },
   },
 
