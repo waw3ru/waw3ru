@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxt/icon", "@nuxt/fonts", "nuxt-vuefire", "nuxt-studio", "@nuxtjs/seo"],
 
   site: {
-    url: "https://wawwru.nalima.digital",
+    url: "https://waw3ru.onrender.com",
     name: "John (.W.) Wambugu",
     description: "Senior Software Engineer specializing in building scalable web applications and digital experiences.",
     defaultLocale: "en",

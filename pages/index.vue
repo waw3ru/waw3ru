@@ -62,7 +62,7 @@ useSchemaOrg([
     image: cv.value?.avatar,
     jobTitle: cv.value?.title,
     description: cv.value?.summary,
-    url: "https://wawwru.nalima.digital",
+    url: "https://waw3ru.onrender.com",
     sameAs: [cv.value?.github, cv.value?.linkedin, cv.value?.twitter].filter(Boolean) as string[],
   }),
 ]);

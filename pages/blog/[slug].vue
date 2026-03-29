@@ -101,7 +101,7 @@ useSchemaOrg([
     author: [
       {
         name: "John (.W.) Wambugu",
-        url: "https://wawwru.nalima.digital",
+        url: "https://waw3ru.onrender.com",
       },
     ],
   }),
