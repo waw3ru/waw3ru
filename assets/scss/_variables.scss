@@ -1,0 +1,18 @@
+// Fonts
+$font-display: 'Syne', sans-serif;
+$font-body: 'DM Sans', sans-serif;
+$font-signature: 'Caveat', cursive;
+
+// Glassmorphism default tokens (will be overridden by root variables)
+$glass-blur: 12px;
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-blur: #{$glass-blur};
+}
+
+.dark {
+  --glass-bg: rgba(17, 24, 39, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}

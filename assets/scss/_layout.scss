@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.bg-blob {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--color-primary-500) 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+
+  .dark & {
+    opacity: 0.1;
+  }
+}
+
+// Layout Transitions
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+// Nuxt Studio Editor support
+html.nuxt-studio-preview,
+html.studio-open,
+html.studio-expanded {
+  header.fixed {
+    display: none !important;
+  }
+}

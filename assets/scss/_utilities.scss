@@ -1,0 +1,22 @@
+@use "mixins" as *;
+
+.glass-effect {
+  @include glass-effect;
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full border-4 border-solid border-gray-50 dark:border-gray-900;
+  
+  &:hover {
+    @apply bg-primary-500;
+  }
+}

@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+html {
+  font-family: $font-body;
+  scroll-behavior: smooth;
+  background-color: #fef6f0;
+  color: #212529;
+  transition: background-color 0.5s ease-in-out;
+
+  &.dark {
+    background-color: #212529;
+    color: #fef6f0;
+  }
+}
+
+body {
+  background-color: transparent;
+  color: inherit;
+  @apply antialiased overflow-x-hidden;
+}
+
+.font-display { font-family: $font-display; }
+.font-body { font-family: $font-body; }
+.font-signature { font-family: $font-signature; }

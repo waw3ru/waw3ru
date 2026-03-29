@@ -1,0 +1,30 @@
+{
+  "name": "my-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "firebase": "^10.8.0",
+    "nuxt": "^3.11.0",
+    "nuxt-studio": "1.5.1",
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/content": "latest",
+    "@nuxt/fonts": "latest",
+    "@nuxt/icon": "^1.15.0",
+    "@nuxt/image": "latest",
+    "@nuxt/ui": "^2.15.2",
+    "nuxt-vuefire": "latest",
+    "sass": "^1.98.0",
+    "typescript": "latest"
+  }
+}

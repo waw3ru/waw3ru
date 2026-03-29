@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "title": "Coding Better Together Series (pt.1) - Code Smells",
+      "description": "Eliminate Technical Debt: Identifying and Refactoring Common Code Smells to Improve Readability, Maintainability, and Collaboration within Engineering Teams, Ensuring Long-Term Project Scalability and a Healthier, More Efficient Development Lifecycle.",
+      "url": "https://www.linkedin.com/pulse/coding-better-together-series-pt1-code-smells-john-wambugu",
+      "platform": "LinkedIn",
+      "publishedAt": "2023-08-14",
+      "tags": [
+        "Clean Code",
+        "Software Design",
+        "OOP"
+      ]
+    }
+  ]
+}

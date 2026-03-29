@@ -1,0 +1,155 @@
+{
+  "title": "Senior Software Engineer",
+  "avatar": "/avatar.jpg",
+  "education": [
+    {
+      "institution": "Multimedia University of Kenya",
+      "degree": "Bachelor of Science — Mathematics and Computer Science (Pure Mathematics)",
+      "year": "Graduated"
+    },
+    {
+      "institution": "eMobilis",
+      "degree": "Mobile Software Development and Entrepreneurship Program",
+      "year": "Completed"
+    },
+    {
+      "institution": "Sundoulos African Leadership Training (SALT)",
+      "degree": "Servant Leadership",
+      "year": "Completed"
+    }
+  ],
+  "email": "waweruj00@gmail.com",
+  "experience": [
+    {
+      "company": "Kalvad",
+      "role": "Senior Software Engineer",
+      "period": "October 2018 – Present",
+      "description": "Worldwide Tech Agency solving business problems through cutting-edge technology.",
+      "highlights": [
+        "Design, develop and deploy frontend applications for clients using Angular and Vue.js as primary technologies.",
+        "Write Node.js Lambda functions for heavy browser computations and deploy them to AWS using the Serverless Framework.",
+        "Write GitHub Actions configurations and dockerize frontend apps for deployment to Coolify.",
+        "Work with project leads to plan implementation of functional requirements and collaborate with clients on UI design."
+      ]
+    },
+    {
+      "company": "Finsweet (Wized)",
+      "role": "Senior Software Engineer",
+      "period": "May 2022 – February 2024",
+      "description": "Full-stack engineer on Wized — a no-code platform enabling Webflow developers to build data-rich apps.",
+      "highlights": [
+        "Built data integrations to Firebase, Supabase, Notion, Xano, Airtable, Stripe, and REST APIs.",
+        "Enabled authentication and user management for Webflow apps via the Wized platform.",
+        "Worked on the Wized Embed library — DOM integration layer powering page actions without custom JavaScript.",
+        "Built the configurator tool for developers to manage projects, workspaces and app configuration.",
+        "Supported Stripe Connected Apps for payment collection and transaction fee processing."
+      ]
+    },
+    {
+      "company": "CanGo (formerly Safemotos)",
+      "role": "Backend Software Engineer",
+      "period": "June 2019 – February 2020",
+      "description": "On-demand transportation and food delivery service (similar to Bolt/Uber).",
+      "highlights": [
+        "Built microservices using NestJS for a GraphQL API serving mobile and web clients.",
+        "Developed Payment, Trip Management, Events Controller, and Customer Management services.",
+        "Created an internal Apache Kafka library with Avro schema management for producers and consumers.",
+        "Designed microservice architecture with the CTO and deployed to Kubernetes monitored via Prometheus and Grafana."
+      ]
+    },
+    {
+      "company": "Middleware Inc.",
+      "role": "Backend Software Engineer (Consultant)",
+      "period": "April 2020 – August 2020",
+      "description": "Fleet management company. Responsible for a Node.js microservice called Bloodhound.",
+      "highlights": [
+        "Built fleet tracking system consuming IoT data relayed by Golang microservices on motorcycles.",
+        "Implemented driver management including motor vehicle assignment.",
+        "Built motor vehicle management covering road worthiness and insurance tracking.",
+        "Developed a REST API serving dashboard data to the frontend team. MongoDB as the database."
+      ]
+    },
+    {
+      "company": "LivingGoods",
+      "role": "Software Engineer, Consultant",
+      "period": "May 2018 – May 2019",
+      "description": "NGO supporting digitally empowered community health workers. Started as intern, promoted to consultant.",
+      "highlights": [
+        "Maintained an SMS Health Information System built with Python and RapidSMS.",
+        "Created and maintained an ETL tool streaming data to and from the SMS platform for dashboard observability."
+      ]
+    }
+  ],
+  "github": "https://github.com/waw3ru",
+  "linkedin": "https://linkedin.com/in/waw3ru",
+  "location": "Nairobi, Kenya",
+  "name": "John (.W.) Wambugu",
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "skills": [
+        "JavaScript",
+        "Typescript",
+        "Golang",
+        "Python"
+      ]
+    },
+    {
+      "category": "Frontend",
+      "skills": [
+        "Angular",
+        "Vue",
+        "Preact",
+        "Vite",
+        "Nuxt",
+        "Tailwind CSS",
+        "UI Design"
+      ]
+    },
+    {
+      "category": "Backend",
+      "skills": [
+        "Node.js - but I use Bun 😊",
+        "NestJS",
+        "Flask",
+        "Hono",
+        "Gin",
+        "Fiber",
+        "Django"
+      ]
+    },
+    {
+      "category": "DevOps",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Coolify"
+      ]
+    },
+    {
+      "category": "Databases",
+      "skills": [
+        "PostgreSQL",
+        "MongoDB",
+        "SQLite",
+        "Redis",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "category": "Tools",
+      "skills": [
+        "n8n",
+        "Firebase",
+        "Supabase",
+        "Git",
+        "Travis CI",
+        "Gitlab CI",
+        "GitHub Actions"
+      ]
+    }
+  ],
+  "summary": "Senior Software Engineer with a deep-rooted passion for TypeScript, Angular, Vue.js, Node.js and Python. Over 7 years honing my craft across agencies, startups, NGOs and consultancies — from microservices and distributed systems to no-code platforms and frontend applications.",
+  "tagline": "Maestro in web development. 8+ years building robust, efficient, and user-centric software solutions.",
+  "twitter": "https://x.com/waw3ru"
+}
