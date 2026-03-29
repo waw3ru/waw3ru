@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     name: "John (.W.) Wambugu",
     description: "Senior Software Engineer specializing in building scalable web applications and digital experiences.",
     defaultLocale: "en",
+    ogImage: "/og-image.png",
   },
 
   content: {

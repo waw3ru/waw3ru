@@ -10,8 +10,10 @@ useSeoMeta({
   titleTemplate: "%s | John (.W.) Wambugu",
   ogSiteName: "John (.W.) Wambugu",
   ogType: "website",
+  ogImage: "/og-image.png",
   twitterCard: "summary_large_image",
   twitterSite: "@waw3ru",
+  twitterImage: "/og-image.png",
 })
 
 useHead({
