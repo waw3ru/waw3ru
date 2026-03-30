@@ -44,7 +44,7 @@ I recently fell in love with Golang. The simplicity that runtimes like bun bring
 The elegance of error handling in Golang
 The old way we do, try me and I'll catch you seems to be the best approach. But of late it seems to be a horror. TypeScript's way of throwing errors is:
 
-```typescript [always-errors.ts]
+```typescript
 function myAlwaysError() {
     const d: string = "";
     if (d.length < 1) throw new Error("Why me!!");
@@ -54,7 +54,7 @@ function myAlwaysError() {
 
 It's perfect! You know it's a string so no need to worry about the type of constant d. You are the one throwing an error so still in your mindset of how the program is expected to run, you can have \~100% correctness. If I don't want my program to panic while I implement your function, I have no choice but to play cat ... mouse with your function.
 
-```typescript [main.ts]
+```typescript
 function myAlwaysError() {
   const D: string = "";
   if (D.length < 1) throw new Error("Why me!!");
@@ -77,7 +77,7 @@ The above code example is a pain because of the following:
 The error argument e is scoped. This means I have to squeeze all my error handling computation and functionality inside the block or assign it to a global variable.
 I cannot use any variable I declared within the try block when I am done with handling my mistakes (errors). Unless I let, above my `try ... catch`. See the example below
 
-```ts [always-errors.ts]
+```ts
 function myAlwaysError() {
     const D: string = "";
     if (D.length < 1) throw new Error("Why me!!");
@@ -126,7 +126,7 @@ function main(): MainReturn {
 
 Now, what I love about Golang is errors are passed as values. This means I handle my errors like I do my variables. A simple approach to Golang error handling will be this
 
-```go [main.go]
+```go
 package main
 
 import (
@@ -144,7 +144,7 @@ func checkMyArgument(arg int) (int, error) {
 
 Now the syntax is a bit different but you can see a "tuple-like" approach to returning values. This is because when calling the function, you get to do this:
 
-```go [main.go]
+```go
 import (
     "errors"
     "fmt"
@@ -173,7 +173,7 @@ I hope you can spot the difference.
 I don't need to reassign the error to some other variable because it's passed as a value or in layman's terms; as a returned value. So, the scope or lifetime of a variable does not hinder you from doing what's right by the errors you experience.
 You can make the whole thing short and clean.
 
-```go [main.go]
+```go
 func main() {
     if argument, err := checkMyArgument(90); err != nil {
         fmt.Println("I failed you!:", err)

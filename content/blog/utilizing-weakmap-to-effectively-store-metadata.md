@@ -3,6 +3,7 @@ title: Utilizing WeakMap to effectively store Metadata file
 category: Programming
 cover: /fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg
 description: "Gemini said Mastering Metadata in JavaScript: Harnessing WeakMaps for Efficient, Memory-Safe Object Extensions Without Manual Cleanup or Memory Leaks. Learn how to utilize WeakMaps to attach private metadata to objects, ensuring that data is automatically garbage-collected when the object is no longer in use, thus maintaining optimal application performance and cleaner code."
+publishedAt: 2024-03-15
 tags:
   - JavaScript
   - Data Sctructures
@@ -13,7 +14,7 @@ tags:
 
 Metadata is simply data that holds information about some other piece of data. Seems repetitive but if you were to think of networking and mainly HTTP. If you perform an HTTP request, data is sent or received (HTTP response) together with some HTTP headers. The HTTP headers are considered metadata and specifically []{.white-space-pre style="box-sizing: inherit; margin: 0px; padding: 0px; border-color: rgba(255, 255, 255, 0.9); border-style: none; border-width: 0px; border-image: none 100% / 1 / 0 stretch; font-size: 16px; vertical-align: baseline; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); outline: rgba(255, 255, 255, 0.9) none 0px; white-space: pre !important; font-family: -apple-system, system-ui, BlinkMacSystemFont, &#x22;Segoe UI&#x22;, Roboto, &#x22;Helvetica Neue&#x22;, &#x22;Fira Sans&#x22;, Ubuntu, Oxygen, &#x22;Oxygen Sans&#x22;, Cantarell, &#x22;Droid Sans&#x22;, &#x22;Apple Color Emoji&#x22;, &#x22;Segoe UI Emoji&#x22;, &#x22;Segoe UI Emoji&#x22;, &#x22;Segoe UI Symbol&#x22;, &#x22;Lucida Grande&#x22;, Helvetica, Arial, sans-serif;"}*descriptive metadata*. So as much as you as the recipient of the request might want to read the data sent, you will need the HTTP headers to be able to understand the data you have been sent. []{.white-space-pre style="box-sizing: inherit; margin: 0px; padding: 0px; border-color: rgba(255, 255, 255, 0.9); border-style: none; border-width: 0px; border-image: none 100% / 1 / 0 stretch; font-size: 16px; vertical-align: baseline; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); outline: rgba(255, 255, 255, 0.9) none 0px; white-space: pre !important; font-family: -apple-system, system-ui, BlinkMacSystemFont, &#x22;Segoe UI&#x22;, Roboto, &#x22;Helvetica Neue&#x22;, &#x22;Fira Sans&#x22;, Ubuntu, Oxygen, &#x22;Oxygen Sans&#x22;, Cantarell, &#x22;Droid Sans&#x22;, &#x22;Apple Color Emoji&#x22;, &#x22;Segoe UI Emoji&#x22;, &#x22;Segoe UI Emoji&#x22;, &#x22;Segoe UI Symbol&#x22;, &#x22;Lucida Grande&#x22;, Helvetica, Arial, sans-serif;"}
 
-This caught my interest because most of the time, when I am creating a web application. I would want my, let say **DOM** elements, to hold some information (metadata). I don't want to mutate them by adding attributes so the most obvious way I thought of, is to use a cache object. An example of a cache object would be
+This caught my interest because most of the time, when I am creating a web application. I would want my, let say **DOM** elements, to hold some information (metadata). I don't want to mutate them by adding attributes so the most obvious way I thought of, is to use a cache object. An example of a cache object would be 
 
 ```js
 const cache = {};
