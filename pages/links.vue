@@ -3,11 +3,12 @@
     <!-- Header Section -->
     <div class="max-w-4xl mb-16 relative">
       <div class="absolute -top-12 -left-12 w-32 h-32 bg-primary-500/10 blur-[80px] rounded-full pointer-events-none" />
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold mb-6 tracking-tight">
-        Useful <span class="text-primary-500">Links</span>
+      <h2 class="text-xs font-black uppercase tracking-[0.3em] text-primary-500 mb-4 animate-fade-in">Curated Collection</h2>
+      <h1 class="text-4xl md:text-5xl lg:text-7xl font-display font-extrabold mb-6 tracking-tight leading-[1.1]">
+        Useful <span class="text-primary-500 italic">Links</span>
       </h1>
-      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-        A curated collection of digital artifacts, technical insights, and creative resources discovered across the web.
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed opacity-90">
+        A curated selection of digital artifacts, technical insights, and creative resources discovered across the web.
       </p>
     </div>
 

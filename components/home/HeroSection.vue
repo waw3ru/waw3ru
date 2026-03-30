@@ -4,10 +4,10 @@
       <div class="glass-effect rounded-[3rem] p-8 md:p-16 border-white/20 dark:border-white/5 shadow-2xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="text-center lg:text-left">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tighter mb-6 text-gray-900 dark:text-white leading-[1.1]">
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-display font-extrabold tracking-tight mb-6 text-gray-900 dark:text-white leading-[1.1]">
               Hi all, I'm <span class="text-primary italic">{{ name.split(' ')[0] }}</span> <span class="wave-emoji inline-block">👋</span>
             </h1>
-            <div class="text-lg md:text-xl lg:text-2xl font-display text-gray-600 dark:text-gray-400 font-semibold mb-8 uppercase tracking-[0.2em]">
+            <div class="text-sm md:text-lg lg:text-xl font-display text-gray-500 dark:text-gray-400 font-bold mb-8 uppercase tracking-[0.15em] opacity-80">
               {{ title }}
             </div>
             <p class="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-10 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">

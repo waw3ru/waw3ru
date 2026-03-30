@@ -23,10 +23,10 @@
               </UBadge>
             </div>
           </div>
-          <h1 class="text-4xl md:text-6xl font-display font-bold text-white leading-tight mb-4 drop-shadow-lg">
+          <h1 class="text-4xl md:text-5xl lg:text-7xl font-display font-extrabold text-white leading-[1.1] mb-6 drop-shadow-xl tracking-tight">
             {{ post.title }}
           </h1>
-          <p class="text-xl md:text-2xl text-gray-300 font-light drop-shadow">
+          <p class="text-lg md:text-xl text-gray-300 font-medium drop-shadow opacity-90 leading-relaxed max-w-2xl">
             {{ post.description }}
           </p>
         </div>

@@ -2,8 +2,8 @@
   <section class="py-24 animate-fade-up">
     <UContainer class="max-w-7xl">
       <div class="text-center mb-20">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight mb-4 uppercase text-gray-900 dark:text-white">Experience</h2>
-        <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+        <h2 class="text-xs font-black uppercase tracking-[0.3em] text-primary mb-3">Professional Journey</h2>
+        <h2 class="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-gray-900 dark:text-white">Experience</h2>
       </div>
 
       <div class="space-y-12 max-w-5xl mx-auto">

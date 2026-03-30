@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   },
 
   fonts: {
-    families: [{ name: "Syne", weights: [400, 700, 800] }, { name: "DM Sans" }, { name: "Caveat", weights: [400, 700] }],
+    families: [{ name: "Outfit", weights: [400, 600, 700, 800, 900] }, { name: "Inter", weights: [400, 500, 600, 700] }, { name: "Caveat", weights: [400, 700] }],
   },
 
   css: ["~/assets/scss/main.scss"],

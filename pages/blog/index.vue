@@ -1,10 +1,11 @@
 <template>
   <UContainer class="py-12 md:py-24 max-w-7xl animate-fade-up">
-    <div class="max-w-3xl mb-16">
-      <h1 class="text-4xl md:text-6xl font-display font-extrabold mb-6 tracking-tight">
-        Blog <span class="text-primary-500">.</span>
+    <div class="max-w-3xl mb-16 relative">
+      <h2 class="text-xs font-black uppercase tracking-[0.3em] text-primary-500 mb-4 animate-fade-in">Digital Garden</h2>
+      <h1 class="text-4xl md:text-5xl lg:text-7xl font-display font-extrabold mb-6 tracking-tight leading-[1.1]">
+        Technical <span class="text-primary-500 italic">Insights</span>
       </h1>
-      <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed font-medium">
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed font-medium opacity-90">
         Thoughts, tutorials, and deep dives into software engineering, architecture, and the future of web development.
       </p>
     </div>

@@ -152,8 +152,10 @@
           class="glass-effect rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 border-white/20 dark:border-white/5 shadow-2xl animate-fade-up"
         >
           <div class="flex-1 text-center md:text-left">
-            <h2 class="text-5xl md:text-6xl font-display font-black mb-6 tracking-tight">Reach Out <span class="text-primary italic">to me!</span></h2>
-            <p class="text-xl text-gray-600 dark:text-gray-400 mb-10 font-light leading-relaxed">
+            <h2 class="text-4xl md:text-6xl font-display font-extrabold mb-6 tracking-tight leading-[1.1]">
+              Reach Out <span class="text-primary italic">to me!</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 font-medium leading-relaxed opacity-90">
               Discuss a project or just want to say hi? My Inbox is open for all.
             </p>
 
@@ -180,7 +182,7 @@
                 color="gray"
                 variant="solid"
                 size="lg"
-                class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                class="rounded-full w-14 h-14 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
                 data-rybbit-event="contact_click"
                 data-rybbit-prop-platform="github"
                 data-rybbit-prop-location="reach_out"
@@ -193,12 +195,12 @@
                 color="gray"
                 variant="solid"
                 size="lg"
-                class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:-rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                class="rounded-full w-14 h-14 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:-rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
                 data-rybbit-event="contact_click"
                 data-rybbit-prop-platform="linkedin"
                 data-rybbit-prop-location="reach_out"
               >
-                <UIcon name="i-lucide-linkedin" class="w-8 h-8" />
+                <UIcon name="i-lucide-linkedin" class="w-6 h-6" />
               </UButton>
               <UButton
                 :to="cv.twitter"
@@ -206,24 +208,24 @@
                 color="gray"
                 variant="solid"
                 size="lg"
-                class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                class="rounded-full w-14 h-14 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:rotate-6 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
                 data-rybbit-event="contact_click"
                 data-rybbit-prop-platform="twitter"
                 data-rybbit-prop-location="reach_out"
               >
-                <UIcon name="i-simple-icons-x" class="w-8 h-8" />
+                <UIcon name="i-simple-icons-x" class="w-6 h-6" />
               </UButton>
               <UButton
                 :to="'mailto:' + cv.email"
                 color="gray"
                 variant="solid"
                 size="lg"
-                class="rounded-full w-16 h-16 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
+                class="rounded-full w-14 h-14 flex items-center justify-center p-0 hover:bg-primary-500 hover:text-white transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl dark:hover:bg-primary-500 dark:bg-gray-800 bg-white shadow-xl ring-1 ring-gray-200 dark:ring-gray-700"
                 data-rybbit-event="contact_click"
                 data-rybbit-prop-platform="email"
                 data-rybbit-prop-location="reach_out"
               >
-                <UIcon name="i-lucide-mail" class="w-8 h-8" />
+                <UIcon name="i-lucide-mail" class="w-6 h-6" />
               </UButton>
             </div>
           </div>

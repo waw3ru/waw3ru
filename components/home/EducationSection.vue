@@ -2,8 +2,8 @@
   <section class="py-24 animate-fade-up">
     <UContainer class="max-w-7xl">
       <div class="text-center mb-20">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight mb-4 uppercase text-gray-900 dark:text-white">Education</h2>
-        <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+        <h2 class="text-xs font-black uppercase tracking-[0.3em] text-primary mb-3">Academic Foundation</h2>
+        <h2 class="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-gray-900 dark:text-white">Education</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <UCard v-for="(edu, index) in education" :key="index" class="text-center glass-effect border-0 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 rounded-[3rem] group">
