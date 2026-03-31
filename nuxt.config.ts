@@ -4,12 +4,22 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxt/icon", "@nuxt/fonts", "nuxt-vuefire", "nuxt-studio", "@nuxtjs/seo"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxt/content",
+    "@nuxt/image",
+    "@nuxt/icon",
+    "@nuxt/fonts",
+    "nuxt-vuefire",
+    "nuxt-studio",
+    "@nuxtjs/seo",
+  ],
 
   site: {
     url: "https://waw3ru.onrender.com",
     name: "John (.W.) Wambugu",
-    description: "Senior Software Engineer specializing in building scalable web applications and digital experiences.",
+    description:
+      "Senior Software Engineer specializing in building scalable web applications and digital experiences.",
     defaultLocale: "en",
     ogImage: "/og-image.png",
   },
@@ -45,7 +55,11 @@ export default defineNuxtConfig({
   },
 
   fonts: {
-    families: [{ name: "Outfit", weights: [400, 600, 700, 800, 900] }, { name: "Inter", weights: [400, 500, 600, 700] }, { name: "Caveat", weights: [400, 700] }],
+    families: [
+      { name: "Outfit", weights: [400, 600, 700, 800, 900] },
+      { name: "Inter", weights: [400, 500, 600, 700] },
+      { name: "Caveat", weights: [400, 700] },
+    ],
   },
 
   css: ["~/assets/scss/main.scss"],
@@ -58,6 +72,12 @@ export default defineNuxtConfig({
           src: "https://app.rybbit.io/api/script.js",
           "data-site-id": "5e26bf8298ec",
           defer: true,
+        },
+        {
+          src: "https://cloud.umami.is/script.js",
+          "data-website-id": "fd380271-0d93-4b57-b08e-840dfc0b5f21",
+          defer: true,
+          async: true,
         },
       ],
     },
