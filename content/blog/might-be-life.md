@@ -1,4 +1,4 @@
-# MIght of life
+# MIght be life
 
 I can not shake the idea that life is coded. We thought but you thought wrong. Life is not yours but a consequence of sex. You are nothing but a horny result of two people who took a chance.
 
